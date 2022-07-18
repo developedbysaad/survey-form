@@ -1,5 +1,6 @@
 body {
   display: flex;
+  flex-direction: column;
   background-color: #17171f;
   font-family: "poppins", sans-serif;
   display: flex;
@@ -10,9 +11,6 @@ body {
 }
 
 .container {
-  position: fixed;
-  top: 5rem;
-  left: 5rem;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -80,7 +78,7 @@ input:valid {
 
 table {
   width: 100%;
-  margin: auto 150px;
+  margin: 0;
 }
 
 th {
