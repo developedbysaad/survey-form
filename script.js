@@ -19,6 +19,7 @@ console.log(minDate);
 console.log(maxDate);
 // validate email
 
+
 const email = document.getElementById("email");
 
 email.addEventListener("input", function(event) {
@@ -85,6 +86,10 @@ const saveUserForm = (event) => {
   };
   userEntries.push(userDetails);
   localStorage.setItem("user-entries", JSON.stringify(userEntries));
+  const inputs = document.querySelectorAll('#name, #email, #password, #dob, #acceptTerms');
+  inputs.forEach(input => {
+    input.value = '';
+  });
   displayEntries();
 };
 

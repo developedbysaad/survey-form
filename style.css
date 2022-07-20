@@ -1,5 +1,6 @@
 body {
   display: flex;
+  flex-wrap: wrap;
   background-color: #17171f;
   font-family: "poppins", sans-serif;
   display: flex;
@@ -40,7 +41,7 @@ body {
   margin-bottom: 5px;
 }
 
-.form-section input {
+.form-section .form-input {
   border: 2px solid #dbd4d4;
   border-radius: 4px;
   display: block;
@@ -72,14 +73,6 @@ body {
   color: #fff;
   text-align: center;
   margin: 40px;
-}
-
-input:invalid {
-  border: 1px solid red;
-}
-
-input:valid {
-  border: 1px solid black;
 }
 
 table {
